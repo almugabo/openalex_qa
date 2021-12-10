@@ -27,35 +27,39 @@
 ![DQM aspects ](/_images/Quality_Aspects.png)
 
 
+#### Main questions: 
+1. **Scope**:
+- Which entity types does OpenAlex cover?
+- Which entity types are missing? (assessed against a given usage scenario) 
 
+2. **Coverage** 
+- What is the coverage for each entity type? (assessed against a reference) 
 
-Main questions: 
-Scope 
-Which entity types does OpenAlex cover?
-Which entity types are missing? (assessed against a given usage scenario) 
-Coverage 
-What is the coverage for each entity type? (assessed against a reference)
-Completeness 
-How complete are the records (and associated metadata) for each entity type (assessed against a reference)
-Accuracy 
-How accurate are the records ? (assessed against a reference/”ground truth”)
+3. **Completeness**
+- How complete are the records (and associated metadata) for each entity type (assessed against a reference)
 
-Interoperability 
-Which data can be externally linked? Which other datasets should be created? (assessed against a given usage scenario)
+4. **Accuracy**
+- How accurate are the records ? (assessed against a reference/”ground truth”)
 
+5. **Interoperability**
+- Which data can be externally linked? Which other datasets should be created? (assessed against a given usage scenario)
 
 
 
 ## 3. Caveats and Disclaimers and Caveats
 
-OpenAlex is still in its infancy. Documentation of how it is created, and future development plans are not yet released. As OpenAlex and the wider eco-system of open scholarly data evolve, this work will be periodically revised to avoid unnecessary duplication (the proverbial “re-inventing of the wheel”. For example, we may adapt it to the roadmap of OpenAlex development (or plans of other providers of open scholarly data)
+* OpenAlex is still in its infancy. Documentation of how it is created, and future development plans are not yet released. As OpenAlex and the wider eco-system of open scholarly data evolve, this work will be periodically revised to avoid unnecessary duplication (the proverbial “re-inventing of the wheel”. For example, we may adapt it to the roadmap of OpenAlex development (or plans of other providers of open scholarly data)
 
-The repository includes personal thoughts, scripts, and results related to assessing the quality of data in OpenAlex and suggestions for improvements [from the perspective of a user]. The repository affiliated with OpenAlex and/or OurResearch and they cannot be held responsible for any of its imperfections. 
+* The repository includes personal thoughts, scripts, and results related to assessing the quality of data in OpenAlex and suggestions for improvements (*from the perspective of a one user*. The repository affiliated with OpenAlex and/or OurResearch and they cannot be held responsible for any of its imperfections. 
 
-Although related to some aspects of my work at the European Research Council Executive Agency (ERCEA), this is a personal repository. Any views expressed here are mine. They do not reflect the views or official positions of ERC or the European Commission.
+* Although related to some aspects of my work at the European Research Council Executive Agency (ERCEA), this is a personal repository. Any views expressed here are mine. They do not reflect the views or official positions of ERC or the European Commission.
 
-The scripts and datasets are provided here "as-is" and without warranty of any kind, express, implied, or otherwise.
+* The scripts and datasets are provided here "as-is" and without warranty of any kind, express, implied, or otherwise.
 
 ## 4 Call for collaboration/contribution
-Any feedback/suggestions appreciated.
-Please contact me for collaboration /contribution if this work is of interest to you. If there are enough people interested, we may consider refactoring the repository and agree on its future organisation
+* Any feedback/suggestions appreciated.
+
+* Please contact me for collaboration /contribution if this work is of interest to you. If there are enough people interested, we may consider refactoring the repository and agree on its future organisation
+
+
+```Disclaimer: any views expressed here are strictly in personal capacity ```
