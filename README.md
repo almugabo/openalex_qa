@@ -21,7 +21,10 @@
 
 * [Data Quality Management (DQM)](https://en.wikipedia.org/wiki/Data_quality)  has several dimensions such as completeness, accuracy, precision, timeliness  whose exact definition is also context dependent. For our purpose we will focus (in short and mid-term) on five aspects (1) coverage, (2) coverage (3) completeness (4) accuracy and (5) interoperability 
 
-Figure 1: Dimensions of data quality prioritised in short/mid term
+##### Figure 1: Dimensions of data quality prioritised in short/mid term
+
+
+![DQM aspects ](/_images/Quality_Aspects.png)
 
 
 
