@@ -11,7 +11,7 @@
   * Which entity types are included in OpenAlex (current version) ? 
   * Which entity types are missing - for our intended use case - and how can they be added ?
 
-## 1. Which entity types are included in OpenAlex (current version) ? 
+### 1. Which entity types are included in OpenAlex (current version) ? 
 
 In the table "papers" we have two main fields which can give an indication of the type of documents in OpenAlex
 
@@ -29,14 +29,14 @@ The main/rough insight from the table is that, using the two fields:
 * A third of records are of  “unknown type” (in both field) 
 * For another third the two fields d not agree on the type of records 
 
-# 1.1 Using other information to reduce the number of records of “unknown type”  ? 
+#### 1.1 Using other information to reduce the number of records of “unknown type”  ? 
 
 To test whether we can use information available elsewhere to reduce the number of the unknown records , we created a smaller subset of the papers table (filtering year = 2015).  This gives us 9 Mio records . A crosstabulation of doctype/genre is provided below 
 
 ![Entities](/_images/scope_crosstab_genre_doctype_subset_2015.PNG)
 
 
-### 1.1.1 using original venue 
+##### 1.1.1 using original venue 
 
 The table “paper” has a field “original_venue” . 
 
@@ -45,7 +45,7 @@ The sheet “original_venue_top_entries” in the excel file “original_venue_a
 
 =>  It seems that the field can be used to infer document type for some records, however considering that the top 250 entries (with at least 500 records) have a combined total of only about 320k entries , the long tail would cause a challenge 
 
-### 1.1.2 using urls 
+##### 1.1.2 using urls 
 
 The table “papers_url”  provide the url to the record 
 
@@ -54,13 +54,13 @@ We extracted the url domain (using tldextract) and the top domains are provided 
 
 => here also it seems that the url could be used, 
 
-## 1.2 On the discrepancies on type of records  between “doc_type” (MAG) and “genre(Crossref) 
+#### 1.2 On the discrepancies on type of records  between “doc_type” (MAG) and “genre(Crossref) 
 
 From the 2015 subset, it seems that some discrepancies may be based on different definitions. 
 
 We have 6635 entries with genre=dataset  out of which 5418 (82 %) have as original venue the PsycTESTS database, a collection of unpublished  psychological tests and measurements. On the other hand, what counts as dataset in "doc_type seem to be records from data repositories (PANGAE, DataverseNL, Inter-university Consortium for Political and Social Research (ICPSR)) or supplementary materials of journal articles
 
-## 1.3 Suggestion to identify record types 
+#### 1.3 Suggestion to identify record types 
 
 In my view, identification of records could be made easier by creating two additional data fields with information on the source of the records. 
 
@@ -80,5 +80,5 @@ There are problems with this categorization : for example a dataset can be publi
 
 
 
-## 2. Which core entities are missing in OpenAlex  ? 
+### 2. Which core entities are missing in OpenAlex  ? 
 – to be discussed later – 
