@@ -14,12 +14,9 @@ In the table "papers" we have two main fields which can give an indication of th
 * **DocType**    : taken from MAG. This field will be discontinued
 * **Genre**    : provides the document categories from Crossref  
 
-in addition, there are also two other fields which provide additional information
+in addition, there are also two other fields which provide additional information ( *IsParatext*: indicating essentially front-matter and *DocSubTypes*: related to retraction status). 
 
-* **IsParatext**: indicating essentially front-matter. 
-* **DocSubTypes**: related to retraction status
-
-The table x x below provides an crosstabulation of the fields “doc_type” and “genre” 
+In the table below provides an crosstabulation of the fields “doc_type” and “genre” 
 
 
 
