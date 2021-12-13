@@ -77,7 +77,6 @@ There are problems with this categorization : for example a dataset can be publi
 
 ![Entities](/_images/scope_record_type_1.PNG)
 
-
 **1.3.2**  secondary source / certification channel … 
 
 “Secondary source” refers here to the authoritative platform which “registers” the record. It would be often the same as the platform from which the record/metadata was taken but not always .  This field (or a combination of fields) would contain entries like : crossref, arxviv, pubmed , bioarxiv, ssrn, repec and add in the table *PaperExtendedAttributes*  their ids (as it is the case now for pubmed id) 
