@@ -3,6 +3,10 @@
 - OpenAlex (and similar databases of scholarly metadata ) hold information about several entities which are linked between them. 
 - We distinguish between “core entities” (which are, arguably,  the entities around which the databases are build , which are then linked to other entities).  An imperfect term for this core entity is “scholarly output”. i.e. a work/product which scholars create (or contribute to its creation”). 
 - We use the term “core entities” as shown in a simplified representation in the chart below. (We note that this representation could be improved , for example by including other entities, making a distinction between direct links - like citation - and indirect ones like co-citations … ) 
+
+![Entities](/_images/scope_scholarly_data_entities.PNG)
+
+
 - The assessment of the scope is guided by two questions (we leave the question on metadata for the next section) 
   * Which entity types are included in OpenAlex (current version) ? 
   * Which entity types are missing - for our intended use case - and how can they be added ?
@@ -18,19 +22,18 @@ in addition, there are also two other fields which provide additional informatio
 
 In the table below provides an crosstabulation of the fields “doc_type” and “genre” 
 
+![Entities](/_images/scope_crosstab_genre_doctype_fullset.PNG)
 
-
-The main/rough insight from the table is that, using the two fields, we have 
-For only about a third of the records he two fields agree on the record_type
-A third of records are of  “unknown type” (in both field) 
-For another third the two fields d not agree on the type of records 
-
-
+The main/rough insight from the table is that, using the two fields: 
+* For only about a third of the records he two fields agree on the record_type
+* A third of records are of  “unknown type” (in both field) 
+* For another third the two fields d not agree on the type of records 
 
 # 1.1 Using other information to reduce the number of records of “unknown type”  ? 
 
-To test whether we can use information available elsewhere to reduce the number of the unknown records , we created a smaller subset of the papers table (filtering year = 2015).  This gives us 9.8 records 
-A crosstabulation of doctype/genre is provided below 
+To test whether we can use information available elsewhere to reduce the number of the unknown records , we created a smaller subset of the papers table (filtering year = 2015).  This gives us 9 Mio records . A crosstabulation of doctype/genre is provided below 
+
+![Entities](/_images/scope_crosstab_genre_doctype_fullset.PNG)
 
 
 ## 1.1.1 using original venue 
@@ -55,14 +58,9 @@ We extracted the url domain (using tldextract) and the top domains are provided 
 
 From the 2015 subset, it seems that some discrepancies may be based on different definitions. 
 
-We have 6635 entries with genre=dataset  out of which 5418 (82 %) have as original venue the PsycTESTS database, a collection of unpublished  psychological tests and measurements.
-On the other hand, what counts as dataset in "doc_type seem to be records from data repositories (PANGAE, DataverseNL, Inter-university Consortium for Political and Social Research (ICPSR)) 
-or supplementary materials of journal articles
+We have 6635 entries with genre=dataset  out of which 5418 (82 %) have as original venue the PsycTESTS database, a collection of unpublished  psychological tests and measurements. On the other hand, what counts as dataset in "doc_type seem to be records from data repositories (PANGAE, DataverseNL, Inter-university Consortium for Political and Social Research (ICPSR)) or supplementary materials of journal articles
 
-
-
-
-# 1.3 suggestion to identify record types 
+# 1.3 Suggestion to identify record types 
 
 In my view, identification of records could be made easier by creating two additional data fields with information on the source of the records. 
 
@@ -74,12 +72,8 @@ With primary source we mean the type of outlets in which the record has been “
 
 There are problems with this categorization : for example a dataset can be published in the dataset repository and or as a “journal item” (e.g. supplementary material …). 
 
-
-
 1.3.2  secondary source / certification channel … 
 “Secondary source” refers here to the authoritative platform which “registers” the record. It would be often the same as the platform from which the record/metadata was taken but not always . 
-
-This would be 
 
 
 
