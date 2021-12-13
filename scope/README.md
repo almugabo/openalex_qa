@@ -24,10 +24,27 @@ In the table below provides an crosstabulation of the fields “doc_type” and 
 
 ![Entities](/_images/scope_crosstab_genre_doctype_fullset.PNG)
 
-The main/rough insight from the table is that, using the two fields: 
+The main insights from the table: 
+* half of the records are also recorded in Crossref (has crossref "genre") 
 * For only about a third of the records he two fields agree on the record_type
 * A third of records are of  “unknown type” (in both field) 
 * For another third the two fields d not agree on the type of records 
+
+
+
+----
+
+**ISSUES:**
+  
+**1. Reduce the number of records of "unknown type"**
+ 
+**2. Clarify/reduce the discrepancies between record types in crossref (genre) and MAG (doc_type)**
+
+----
+
+
+
+
 
 #### 1.1 Using other information to reduce the number of records of “unknown type”  ? 
 
