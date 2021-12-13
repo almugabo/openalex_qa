@@ -41,18 +41,19 @@ To test whether we can use information available elsewhere to reduce the number 
 The table “paper” has a field “original_venue” . 
 
 In the 2015 subset, out of the 3.8 Mio of unknown type (doc_type and genre null) we have 2.2 Mio with an entry in “original_venue” 
-The sheet “original_venue_top_entries” in the excel file “original_venue_and_urls” show the top entries i.e with over 500 entries (the non-english names are google-translated) 
+The sheet “original_venue_top_entries” in the excel file *original_venue_and_urls* show the top entries i.e with over 500 entries (the non-english names are google-translated) 
 
 =>  It seems that the field can be used to infer document type for some records, however considering that the top 250 entries (with at least 500 records) have a combined total of only about 320k entries , the long tail would cause a challenge 
 
 ##### 1.1.2 using urls 
 
-The table “papers_url”  provide the url to the record 
+The table “papers_url”  provide the url to the record. 
 
-We have xx records with a url (out of those without doc_type, genre or original_venue) 
-We extracted the url domain (using tldextract) and the top domains are provided in the sheet of the 
+From the 1.6 Mio records without information on doc_type, genre or original_venue , we can link 1.5 Mio to the url. 
+We extracted the url domain (using tldextract) and the top domains are provided in the sheet of the *urls_top_domains* in the excel file *original_venue_and_urls*. 
 
-=> here also it seems that the url could be used, 
+The entries by themselves do not provide enough information to infer the document types. However the show that some of the top sources (in terms of number of documents) are repositories which have the information on the type of records they have. This includs for example *http://www.archives-ouvertes.fr* , *university repositories* etc ....  This offers the possibility of retrieving this information from those platforms : in some cases the urls encode the ids of the records in those platforms, so they can be retrieved via APIs if offered, in other cases the operators of the plaforms may be approached to help fill the gaps: it could be in their interest to increase the accessibiliyt of their records if OpenAlex data are used to build search engines). 
+
 
 #### 1.2 On the discrepancies on type of records  between “doc_type” (MAG) and “genre(Crossref) 
 
@@ -62,20 +63,24 @@ We have 6635 entries with genre=dataset  out of which 5418 (82 %) have as origin
 
 #### 1.3 Suggestion to identify record types 
 
-In my view, identification of records could be made easier by creating two additional data fields with information on the source of the records. 
+It is not clear yet to me which is the best strategy to have a complete pictures of the types of records that OpenAlex has. Using available information other fields seem promising  (*original venue* and *url*) but may require a lot of work. 
+
+Either way, it seems to me that what would be helful in short term is to **create two additional data fields with information on the source of the records**.  
 
 The development of a good taxonomy in both fields needs some time (and discussions  with Library Information specialists) but a rough idea of what is meant is provided below . 
 
-1.3.1   primary source 
+**1.3.1   primary source**
 
 With primary source we mean the type of outlets in which the record has been “published” . The main  categories are shown in the table below 
 
 There are problems with this categorization : for example a dataset can be published in the dataset repository and or as a “journal item” (e.g. supplementary material …). 
 
-1.3.2  secondary source / certification channel … 
-“Secondary source” refers here to the authoritative platform which “registers” the record. It would be often the same as the platform from which the record/metadata was taken but not always . 
+![Entities](/_images/scope_record_type_1.PNG)
 
 
+**1.3.2**  secondary source / certification channel … 
+
+“Secondary source” refers here to the authoritative platform which “registers” the record. It would be often the same as the platform from which the record/metadata was taken but not always .  This field (or a combination of fields) would contain entries like : crossref, arxviv, pubmed , bioarxiv, ssrn, repec and add in the table *PaperExtendedAttributes*  their ids (as it is the case now for pubmed id) 
 
 
 
