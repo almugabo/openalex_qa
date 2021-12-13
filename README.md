@@ -29,7 +29,7 @@
 
 #### Main questions: 
 1. [**Scope**](https://github.com/almugabo/openalex_qa/tree/main/scope):
-- Which entity types does OpenAlex cover?
+- Which entity types are included in OpenAlex ?
 - Which entity types are missing? (assessed against a given usage scenario) 
 
 2. **Coverage** 
