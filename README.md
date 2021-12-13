@@ -13,6 +13,8 @@
 
 > The objective of this repository is to share some work done on the assessing and improving the data quality in OpenAlex and hopefully link to other users working on the topic. 
 
+* Talking about *open source*, the repo is more a testing ground for patches to suggest rather than a fork. 
+
 ## 2. What is meant by “Data Quality”?
 
 * The “quality of data” is a judgement passed on a given dataset. But it cannot be made without the consideration of the context in which the dataset is to be used. In this sense, “data quality” is always context dependent. As a concept, it is best understood as  [“fitness for use in a given context”](https://en.wikipedia.org/wiki/Data_quality). Depending on the intended usage the same data can be considered high/acceptable quality or useless (for the purpose). 
