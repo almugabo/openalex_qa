@@ -34,7 +34,7 @@
 - Which entity types are included in OpenAlex ?
 - Which entity types are missing? (assessed against a given usage scenario) 
 
-2. **Coverage** 
+2. [**Coverage**](https://github.com/almugabo/openalex_qa/tree/main/coverage):
 - What is the coverage for each entity type? (assessed against a reference) 
 
 3. **Completeness**
