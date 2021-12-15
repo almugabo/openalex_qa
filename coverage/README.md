@@ -10,6 +10,5 @@ Kramer, Bianca, & Neylon, Cameron. (2021, December 9). Coverage and completeness
 
 * In a first step, we assess the extent to which OpenAlex covers journals from [selected lists]( https://github.com/almugabo/open_metadata/wiki/Journals)
 
-CHART 
-
+![Aspects of "coverage"](/_images/coverage_schema.png)
 
