@@ -3,14 +3,14 @@
 
 Here we report on work done to match OpenAlex venues to Wikidata.
 
-**disclaimer**: I am not the only the one adding OpenAlex identifiers to Wikidata. This builds on work of several other wikidata volunteers. The approach described here are the one I use.
-
-
 **tldr**:
 
 - out of 97.225 scholarly journals in wikidata with an issn_l, 78% have an OpenAlex id (75.911) (up from 29k on March 11th)
-- from the 112.215 venues with an issn_l in OpenAlex, 67% have a wikidata identifier (75.541))
+- from the 112.215 venues with an issn_l in OpenAlex, 67% have a wikidata identifier (75.541)
 - more work needed to match OpenAlex venues to wikidata (and other identifiers), the best way to help is to add OpenAlex ids to wikidata
+
+**disclaimer:**
+I am not the only the one adding OpenAlex identifiers to Wikidata. This builds on work of several other wikidata volunteers. The approach described here are the one I use.
 
 
 ## 1. Background / Motivation
@@ -62,17 +62,17 @@ In the future, we plan to match also by publications using open datasets (e.g. f
 |items which are scholarly journals	| 114,511 |
 |items with issnl	| 97,225 |
 |...with OpenAlex_id	| 75,911 |
-|crossref_journal_id	| 68,109 |
-|scopus_source_id|	33,818|
-|era_journal_id	| 19,911|
-|iso_4|	3,663|
-|oclc_control_id|	6,696|
-|danish_bif_id|	14,156|
-|opencitation_id	|12,637|
-|dimension_source_id|	2,360|
-|springer_journal_id|	2,571|
-|viaf_id|	884|
-|fatcat_id|	378|
+|...with crossref_journal_id	| 68,109 |
+|...with scopus_source_id|	33,818|
+|...with era_journal_id	| 19,911|
+|...with iso_4|	3,663|
+|...with oclc_control_id|	6,696|
+|...with danish_bif_id|	14,156|
+|...with opencitation_id	|12,637|
+|...with dimension_source_id|	2,360|
+|...with springer_journal_id|	2,571|
+|...with viaf_id|	884|
+|...with fatcat_id|	378|
 
 N.B:
 the number of wikidata items more than doubled since March 11th, increasing from 29,150 to 61,897
@@ -87,8 +87,8 @@ the number of wikidata items more than doubled since March 11th, increasing from
 | set                              | numbers |
 | ----------------------------     | ------------- |
 |Venues	|  124,066 |
-|Venues with issnl	| 112,215 |
-|Venues wth issnl and wikidata id	| 75,541|
+|... Venues with issnl	| 112,215 |
+|... Venues wth issnl and wikidata id	| 75,541|
 
 
 
@@ -103,11 +103,8 @@ N.B: I am aware that - as journals change (merge, are renamed ....) - what is co
 
 ## Annex : SPARQL queries
 
-adapted from various queries found online
-thanks also user
-https://stackoverflow.com/users/7879193/stanislav-kralin
-for his explanations which helped crafting the second queries
-
+- adapted from various queries found online
+- thanks also user https://stackoverflow.com/users/7879193/stanislav-kralin for his explanations on stackoverflow which helped craft the second query
 
 
 ```
