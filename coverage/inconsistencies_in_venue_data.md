@@ -1,4 +1,4 @@
-# Addressing Inconsistencies in OpenAlex venue data  
+# Detecting and Addressing inconsistencies in OpenAlex venue data  
 
 *A contribution to the assessment and improvement of data quality in OpenAlex*
 
