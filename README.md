@@ -36,7 +36,7 @@
 
 2. [**Coverage**](https://github.com/almugabo/openalex_qa/tree/main/coverage):
 - What is the coverage for each entity type? (assessed against a reference) 
-- [Detecting and Adressing inconsistencies in Openalex venue data](https://github.com/almugabo/openalex_qa/blob/main/coverage/OpenAlex_venues.md)
+- [Detecting and Adressing inconsistencies in Openalex venue data](https://github.com/almugabo/openalex_qa/blob/main/coverage/inconsistencies_in_venue_data.md)
 
 
 3. **Completeness**
