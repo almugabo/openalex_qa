@@ -1,5 +1,7 @@
 # Addressing Inconsistencies in OpenAlex venue data  
 
+*A contribution to the assessment and improvement of data quality in OpenAlex*
+
 ## 1. Motivation
 OpenAlex inherited from MAG a dataset with only about 50k “venues” disambiguated.  
 It has done tremendous job in:
