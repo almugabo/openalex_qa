@@ -12,3 +12,9 @@ Kramer, Bianca, & Neylon, Cameron. (2021, December 9). Coverage and completeness
 
 ![Aspects of "coverage"](/_images/coverage_schema.png)
 
+
+---- 
+
+- [Detecting and Adressing inconsistencies in Openalex venue data](https://github.com/almugabo/openalex_qa/blob/main/coverage/inconsistencies_in_venue_data.md)
+- [Proposed new journal names](https://github.com/almugabo/openalex_qa/blob/main/coverage/proposed_journal_names.md)
+
