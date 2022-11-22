@@ -2,9 +2,8 @@
 
 This is an updated table of proposed new titles for venues (to solve the issues of having the same names )
 
-see here for explanations 
-
-
+see [Detecting and Addressing inconsistencies in OpenAlex venue data](https://github.com/almugabo/openalex_qa/blob/main/coverage/inconsistencies_in_venue_data.md)
+for explanations 
 
 
 |opalex_id_venue|openalex_display_name|proposed_new_name|
