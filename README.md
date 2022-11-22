@@ -36,9 +36,10 @@
 
 2. [**Coverage**](https://github.com/almugabo/openalex_qa/tree/main/coverage):
 - What is the coverage for each entity type? (assessed against a reference) 
+
+- [Matching OpenAlex venues to Wikidata identifiers](https://github.com/almugabo/openalex_qa/blob/main/coverage/OpenAlex_venues.md)
 - [Detecting and Adressing inconsistencies in Openalex venue data](https://github.com/almugabo/openalex_qa/blob/main/coverage/inconsistencies_in_venue_data.md)
 - [Proposed new journal names](https://github.com/almugabo/openalex_qa/blob/main/coverage/proposed_journal_names.md)
-
 
 3. **Completeness**
 - How complete are the records (and associated metadata) for each entity type (assessed against a reference)
